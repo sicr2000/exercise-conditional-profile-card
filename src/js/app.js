@@ -40,11 +40,19 @@ function render(variables = {}) {
           <h3>${variables.city == null ? "City, " : variables.city}${
     variables.country == null ? "Country" : variables.country
   }</h3>
-          <ul class="position-right">
-            <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/"><i class="fab fa-instagram"></i></a></li>
+          <ul class="${variables.socialMediaPosition}">
+            <li><a href="https://twitter.com/${
+              variables.twitter == null ? "" : variables.twitter
+            }"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://github.com/${
+              variables.github == null ? "" : variables.github
+            }"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://linkedin.com${
+              variables.linkedin == null ? "" : variables.linkedin
+            }/"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/${
+              variables.instagram == null ? "" : variables.instagram
+            }"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
@@ -64,7 +72,7 @@ window.onload = function() {
     avatarURL:
       "https://github.com/sicr2000/exercise-conditional-profile-card-sicr2000/blob/master/public/assets/img/McLovin.jpeg?raw=true",
     // social media bar position (left or right)
-    socialMediaPosition: "position-left",
+    socialMediaPosition: "position-right",
     // social media usernames
     twitter: null,
     github: null,

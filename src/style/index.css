@@ -91,7 +91,7 @@
   transition: background-color 0.3s;
 }
 .widget ul li:hover > a {
-  background-color: #2cd5ca;
+  background-color: #386ca2;
 }
 .widget ul li:first-child > a {
   border-radius: 0 3px 0 0;
