@@ -33,15 +33,18 @@ function render(variables = {}) {
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1> ${variables.name == null ? "Your Name" : variables.name} ${
-    variables.lastname == null ? "Your Lastname" : variables.lastname
-  }</h1>          <h2>Web Developer</h2>
-          <h3>Miami, USA</h3>
+          <h1> ${variables.name == null ? "Nombre" : variables.name} ${
+    variables.lastname == null ? "Apellido" : variables.lastname
+  }</h1>         
+          <h2>${variables.role == null ? "Role" : variables.role}</h2>
+          <h3>${variables.city == null ? "City, " : variables.city}${
+    variables.country == null ? "Country" : variables.country
+  }</h3>
           <ul class="position-right">
-            <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/4geeksacademy"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://github.com/"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
@@ -55,7 +58,8 @@ window.onload = function() {
     // if includeCover is true the algorithm should
     includeCover: true,
     // this is the url of the image that will used as background for the profile cover
-    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
+    background:
+      "https://github.com/sicr2000/exercise-conditional-profile-card-sicr2000/blob/master/public/assets/img/McLovin%20Card.jpg?raw=true",
     // this is the url for the profile avatar
     avatarURL:
       "https://github.com/sicr2000/exercise-conditional-profile-card-sicr2000/blob/master/public/assets/img/McLovin.jpeg?raw=true",
@@ -63,7 +67,7 @@ window.onload = function() {
     socialMediaPosition: "position-left",
     // social media usernames
     twitter: null,
-    github: "alesanchezr",
+    github: null,
     linkedin: null,
     instagram: null,
     name: null,
