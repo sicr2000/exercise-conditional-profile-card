@@ -57,7 +57,8 @@ window.onload = function() {
     // this is the url of the image that will used as background for the profile cover
     background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
     // this is the url for the profile avatar
-    avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
+    avatarURL:
+      "https://github.com/sicr2000/exercise-conditional-profile-card-sicr2000/blob/master/public/assets/img/McLovin.jpeg?raw=true",
     // social media bar position (left or right)
     socialMediaPosition: "position-left",
     // social media usernames
